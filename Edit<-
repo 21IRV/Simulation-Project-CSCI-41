@@ -1,0 +1,15 @@
+void print_world() {
+
+    for (int i = 0; i < width; i++) {
+        for (int j = 0; j < height; j++) {
+            if (i == 0 || i == width - 1 || j == 0 || j == height - 1) {
+                cout << "#";
+            } else if (i == y && j == x) {
+                cout << "O"; //edit
+            } else if (i == foody && j == foodx) {
+                cout << "F"; //edit 
+            } else
+                cout << "_"; //edit
+        }
+
+        cout << endl;
